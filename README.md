@@ -8,6 +8,7 @@
 
 ##Tham khảo
 + [Thư viện Picasso](http://square.github.io/picasso/)
++ [WebView in Android](http://www.mkyong.com/android/android-webview-example/)
 
 ##Mô trường phát triển
 + Bộ công cụ Android Studio 2.1
