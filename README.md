@@ -8,3 +8,8 @@
 
 ##Tham khảo
 + [Thư viện Picasso](http://square.github.io/picasso/)
+
+##Mô trường phát triển
++ Bộ công cụ Android Studio 2.1
++ Máy ảo Genymotion dùng api 21
+
