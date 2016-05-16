@@ -8,6 +8,7 @@
 ![BTVN Asyc Task Read RSS](http://i477.photobucket.com/albums/rr132/trungepu/AsyncTask-ReadRSS_zpsnfoobfpr.jpg)
 
 ##Tham khảo
++ [XML Parse in Android](https://developer.android.com/intl/zh-tw/training/basics/network-ops/xml.html)
 + [Thư viện Picasso](http://square.github.io/picasso/)
 + [WebView in Android](http://www.mkyong.com/android/android-webview-example/)
 + [WebView](http://developer.android.com/intl/zh-tw/guide/webapps/webview.html)
