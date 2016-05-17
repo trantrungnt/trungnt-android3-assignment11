@@ -93,7 +93,7 @@ public class ItemListActivity extends AppCompatActivity {
         }
 
         @Override
-        public void onBindViewHolder(final ViewHolder holder, int position) {
+        public void onBindViewHolder(final ViewHolder holder, final int position) {
             holder.mItem = mValues.get(position);
             if (holder.title == null) {
                 Log.d("XMLL", "" + mValues.get(position).title);
@@ -111,7 +111,7 @@ public class ItemListActivity extends AppCompatActivity {
             //tim link anh jpg va cat chuoi, sau do load anh jpg voi thu vien Picasso
             int startDescription = description.indexOf("src=\"http://");
             int endDescription = description.indexOf(".jpg");
-            String urlImage = description.substring(startDescription + 5, endDescription + 4);
+            final String urlImage = description.substring(startDescription + 5, endDescription + 4);
             Picasso.with(holder.image.getContext()).load(urlImage).into(holder.image);
 
             holder.mView.setOnClickListener(new View.OnClickListener() {
@@ -134,8 +134,8 @@ public class ItemListActivity extends AppCompatActivity {
 //                    }
                 Context context = v.getContext();
                 Intent intent = new Intent(context, ItemDetailActivity.class);
+                intent.putExtra("urlDescription", mValues.get(position).link);
                 context.startActivity(intent);
-
                 }
             });
         }

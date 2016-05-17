@@ -21,6 +21,9 @@ public class ItemDetailActivity extends AppCompatActivity {
     {
         webViewNews = (WebView) this.findViewById(R.id.webViewNews);
         webViewNews.getSettings().setJavaScriptEnabled(true);
-        webViewNews.loadUrl("");
+
+        Bundle bundle = getIntent().getExtras();
+        String urlDescription = bundle.getString("urlDescription");
+        webViewNews.loadUrl(urlDescription);
     }
 }
