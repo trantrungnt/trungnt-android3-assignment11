@@ -7,6 +7,16 @@
 
 ![BTVN Asyc Task Read RSS](http://i477.photobucket.com/albums/rr132/trungepu/AsyncTask-ReadRSS_zpsnfoobfpr.jpg)
 
+##Chú ý khi code
++ Cắt chuỗi có chứa thẻ HTML: để lấy link ảnh, ta dùng phương thức indexOf để lấy vị trí cắt, sau đó ta dùng thư viện Picasso để load ảnh từ URL của ảnh vừa lấy được để hiển thị ảnh trong ImageView: holder.image 
+```
+//tim link anh jpg va cat chuoi, sau do load anh jpg voi thu vien Picasso
+  int startDescription = description.indexOf("src=\"http://");
+  int endDescription = description.indexOf(".jpg");
+  final String urlImage = description.substring(startDescription + 5, endDescription + 4);
+  Picasso.with(holder.image.getContext()).load(urlImage).into(holder.image);
+```
+
 ##Tham khảo
 + [XML Parse in Android](https://developer.android.com/intl/zh-tw/training/basics/network-ops/xml.html)
 + [Thư viện Picasso](http://square.github.io/picasso/)
