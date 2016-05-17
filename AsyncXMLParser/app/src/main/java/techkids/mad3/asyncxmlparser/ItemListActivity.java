@@ -1,6 +1,7 @@
 package techkids.mad3.asyncxmlparser;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -131,6 +132,10 @@ public class ItemListActivity extends AppCompatActivity {
 //
 //                        context.startActivity(intent);
 //                    }
+                Context context = v.getContext();
+                Intent intent = new Intent(context, ItemDetailActivity.class);
+                context.startActivity(intent);
+
                 }
             });
         }
