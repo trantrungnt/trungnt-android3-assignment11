@@ -7,7 +7,6 @@
 
 ![BTVN Asyc Task Read RSS](http://i477.photobucket.com/albums/rr132/trungepu/AsyncTask-ReadRSS_zpsnfoobfpr.jpg)
 
-<<<<<<< HEAD
 ##Demo code
 + [HIển thị danh sách Tin trong RSS, hiển thị ảnh đai diện của Bài viết dùng thư viện Picasso](https://youtu.be/XtxtWJ6mO7k)
 =======
@@ -25,7 +24,7 @@
 ```
    compile 'com.squareup.picasso:picasso:2.5.2'
 ```
->>>>>>> origin/master
+
 
 ##Tham khảo
 + [XML Parse in Android](https://developer.android.com/intl/zh-tw/training/basics/network-ops/xml.html)
