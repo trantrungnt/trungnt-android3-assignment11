@@ -1,4 +1,4 @@
-# trungnt-android3-assignment11
+﻿# trungnt-android3-assignment11
 
 ##Yêu cầu
 + [Đọc RSS của VnExpress bằng Android](http://vnexpress.net/rss/tin-moi-nhat.rss) 
@@ -6,6 +6,9 @@
 + Load ảnh lên Recycle View (có sử dụng thư viện load ảnh Picaso hoặc thư viện nào đó, đọc đường dẫn từ Link ảnh đọc được trong link RSS)
 
 ![BTVN Asyc Task Read RSS](http://i477.photobucket.com/albums/rr132/trungepu/AsyncTask-ReadRSS_zpsnfoobfpr.jpg)
+
+##Demo code
++ [HIển thị danh sách Tin trong RSS, hiển thị ảnh đai diện của Bài viết dùng thư viện Picasso](https://youtu.be/XtxtWJ6mO7k)
 
 ##Tham khảo
 + [XML Parse in Android](https://developer.android.com/intl/zh-tw/training/basics/network-ops/xml.html)
