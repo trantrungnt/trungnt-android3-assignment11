@@ -1,5 +1,6 @@
 package techkids.mad3.asyncxmlparser;
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +14,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
+
 import org.xmlpull.v1.XmlPullParserException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -61,6 +65,7 @@ public class ItemListActivity extends AppCompatActivity {
 //            // activity should be in two-pane mode.
 //            mTwoPane = true;
 //        }
+
     }
 
     private void setupRecyclerView() {
@@ -93,10 +98,12 @@ public class ItemListActivity extends AppCompatActivity {
                 Log.d("XMLL", "" + mValues.get(position).title);
                 Log.d("XMLL", "" + mValues.get(position).description);
                 Log.d("XMLL", "" + mValues.get(position).pubDate);
+
             }
             holder.title.setText(mValues.get(position).title);
             holder.description.setText(mValues.get(position).description);
             holder.pubDate.setText(mValues.get(position).pubDate);
+            Picasso.with(holder.image.getContext()).load("http://i.imgur.com/DvpvklR.png").into(holder.image);
 
             holder.mView.setOnClickListener(new View.OnClickListener() {
                 @Override
