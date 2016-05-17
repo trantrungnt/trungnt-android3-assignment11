@@ -86,6 +86,19 @@ private class DownloadXmlTask extends AsyncTask<String, Void, String> {
 }
 ```
 
++ Sử dụng WebView
+```
+   private void initComponent()
+    {
+        webViewNews = (WebView) this.findViewById(R.id.webViewNews);
+        webViewNews.getSettings().setJavaScriptEnabled(true);
+
+        Bundle bundle = getIntent().getExtras();
+        String urlDescription = bundle.getString("urlDescription");
+        webViewNews.loadUrl(urlDescription);
+    }
+```
+
 ##Tham khảo
 + [XML Parse in Android](https://developer.android.com/intl/zh-tw/training/basics/network-ops/xml.html)
 + [Thư viện Picasso](http://square.github.io/picasso/)
