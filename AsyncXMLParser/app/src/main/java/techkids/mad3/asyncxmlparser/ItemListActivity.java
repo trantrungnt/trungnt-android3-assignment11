@@ -100,10 +100,18 @@ public class ItemListActivity extends AppCompatActivity {
                 Log.d("XMLL", "" + mValues.get(position).pubDate);
 
             }
+
+            String description = mValues.get(position).description;
+
             holder.title.setText(mValues.get(position).title);
-            holder.description.setText(mValues.get(position).description);
+            holder.description.setText(description);
             holder.pubDate.setText(mValues.get(position).pubDate);
-            Picasso.with(holder.image.getContext()).load("http://i.imgur.com/DvpvklR.png").into(holder.image);
+
+            //tim link anh jpg va cat chuoi, sau do load anh jpg voi thu vien Picasso
+            int startDescription = description.indexOf("src=\"http://");
+            int endDescription = description.indexOf(".jpg");
+            String urlImage = description.substring(startDescription + 5, endDescription + 4);
+            Picasso.with(holder.image.getContext()).load(urlImage).into(holder.image);
 
             holder.mView.setOnClickListener(new View.OnClickListener() {
                 @Override
