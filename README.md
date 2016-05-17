@@ -17,6 +17,11 @@
   Picasso.with(holder.image.getContext()).load(urlImage).into(holder.image);
 ```
 
++ Để dùng được thư viện Picasso trong project, ta điền dòng này trong file build.gradle (Module: app) và sync về để cài thư viện trong Project
+```
+   compile 'com.squareup.picasso:picasso:2.5.2'
+```
+
 ##Tham khảo
 + [XML Parse in Android](https://developer.android.com/intl/zh-tw/training/basics/network-ops/xml.html)
 + [Thư viện Picasso](http://square.github.io/picasso/)
